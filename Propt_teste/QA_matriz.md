@@ -18,7 +18,8 @@ Regras importantes:
 - Foque apenas nos impactos introduzidos ou alterados pelo diff
 - Se algo não for testável como teste de unidade, registre isso na matriz
 - Use os arquivos e nomes de arquivos que vierem do DIFF
-- Não invente nomes de arquivos
+- Use a ferramenta de HTTP que você tem disponivel
+- Separe cada caso de teste em um item da matriz de retorno no formaro
 
 
 Escopo da análise:
