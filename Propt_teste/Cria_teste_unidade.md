@@ -80,3 +80,4 @@ Uso das ferramentas:
 - Use apenas nomes de arquivo que você tem certeza que existem
 - Busque apenas por arquivos de código que façam sentido com o contexto do teste que você está criando
 - Priorize usar o Diff da PR para criar os testes
+- Na hora de criar o arquivo no github utilize o nome da Branch onde a feature foi desenvolvida e não invente nomes
