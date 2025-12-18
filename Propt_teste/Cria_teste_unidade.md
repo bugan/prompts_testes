@@ -20,7 +20,6 @@ Regras obrigatórias:
 - NÃO crie testes de integração, contrato ou E2E
 - NÃO altere código de produção
 - NÃO refatore código existente
-- NÃO modifique testes já existentes, a menos que estejam incorretos
 - NÃO assuma comportamentos fora do código visível
 - Todo teste deve ser determinístico e isolado
 
@@ -43,7 +42,7 @@ Arquitetura padrão de testes (seguir estritamente):
 - tests/
   - unit/
 - Arquivos de teste devem:
-  - Ter sufixo .spec.js ou .test.js
+  - Ter sufixo .spec.js
   - Espelhar a estrutura de src/
   - Conter describe por módulo
   - Conter it/test por comportamento
@@ -52,13 +51,12 @@ Arquitetura padrão de testes (seguir estritamente):
 
 Processo que você deve seguir:
 1. Analisar a especificação do teste que receber
-2. Identificar unidades testáveis (funções/métodos)
+2. Identificar unidades testáveis (funções/métodos) utilizando o Diff da PR
 3. Identificar dependências e criar mocks
 4. Definir cenários positivos, negativos e de borda
 5. Criar arquivos de teste em tests/unit/
-6. Garantir isolamento total
 7. Adicionar os arquivos ao GitHub na branch atual da PR
-8. NÃO executar merge, rebase ou squash
+
 
 Formato de saída esperado:
 1. Resumo das unidades testadas
@@ -74,6 +72,8 @@ Restrições de segurança:
 - Não logar tokens
 - Não modificar pipelines de CI
 - Não alterar permissões do repositório
+- Busque apenas os arquivos necessários para trabalhar no repositório
+
 
 Uso das ferramentas:
 - Na hora de usar a ferramenta do Github de listagem de arquivos ou busca de arquivos especificos você precisa passar como input o Repository_Owner,Repository_Name,File_Path,Path
