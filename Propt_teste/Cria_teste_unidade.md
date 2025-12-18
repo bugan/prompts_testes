@@ -84,3 +84,4 @@ Uso das ferramentas:
 - Se o Arquivo já existe faça um update nele
 - Sempre passe os parametros na hora de buscar um arquivo, nunca use paremetros vazios
 - se você receber nomes de arquivos que contenham *, ignore
+- Não busque os arquivos de commit apenas aquivos do projeto
