@@ -75,3 +75,8 @@ Restrições de segurança:
 - Não modificar pipelines de CI
 - Não alterar permissões do repositório
 
+Uso das ferramentas:
+- Na hora de usar a ferramenta do Github de listagem de arquivos ou busca de arquivos especificos você precisa passar como input o Repository_Owner,Repository_Name,File_Path,Path
+- Use apenas nomes de arquivo que você tem certeza que existem
+- Busque apenas por arquivos de código que façam sentido com o contexto do teste que você está criando
+- Priorize usar o Diff da PR para criar os testes
