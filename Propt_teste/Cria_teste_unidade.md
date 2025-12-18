@@ -75,17 +75,3 @@ Restrições de segurança:
 - Não modificar pipelines de CI
 - Não alterar permissões do repositório
 
-PR:{{ $('Github Trigger').item.json.body.pull_request.html_url }}
-
-Agora Crie o código dos testes de acordo com o contexto e suba os arquivos no github na branch onde a feature foi criada
-
-Use o Arquivo: {{ $json['Arquivo / Módulo'] }}
-Mudança no diff: {{ $json['Mudança no Diff'] }}
-Comportamento esperado: {{ $json['Comportamento Esperado'] }}
-Cenário de teste: {{ $json['Cenário de Teste'] }}
-obs: {{ $json['Observações'] }}
-
-Use as ferramentas que o agente de IA te fornecer
-Faça o trabalho com o minimo de requisições pro LLM possivel
-
-Busque os arquivos que estão apenas na branch que a feature foi desenvolvida
